@@ -1,2 +1,30 @@
 /* stylelint-disable */
-:root {}
+:root {
+    // colors
+    --color-grey-khaki: #C1AB81;
+    --color-dark-ochre: #9D875C;
+    --color-white: #fff;
+    // fonts
+    --font-size-16: 16px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-24: 30px;
+    --font-size-32: 32px;
+    --font-size-48: 48px;
+    --font-size-100: 100px;
+    
+    --line-height-25: 25px;
+    --line-height-32: 32px;
+    --line-height-40: 40px;
+    --line-height-50: 50px;
+    --line-height-56: 56px;
+    --line-height-100: 100px;
+    
+    --font-16-25: var(--font-size-16) / var(--line-height-25);
+    --font-20-40: var(--font-size-20) / var(--line-height-40);
+    --font-24-32: var(--font-size-24) / var(--line-height-32);
+    --font-30-50: var(--font-size-30) / var(--line-height-50);
+    --font-32-40: var(--font-size-32) / var(--line-height-40);
+    --font-48-56: var(--font-size-48) / var(--line-height-56);
+    --font-100-100: var(--font-size-100) / var(--line-height-100);
+}

@@ -2,12 +2,12 @@ import { type Mods, classNames } from 'shared/lib/classNames/classNames';
 import { memo, useState } from 'react';
 import logo from 'shared/assets/icons/logo.svg';
 import cls from './Header.module.scss';
+import { Hamburger } from 'shared/ui/Hamburger/Hamburger';
 
 export const Header = memo(() => {
     const [active, setActive] = useState(false);
-
-    const hamburgerModes: Mods = {
-        [cls.Header__hamburger_active]: active
+    const headerModes: Mods = {
+        [cls.Header_active]: active
     };
     const containerModes: Mods = {
         [cls.Header__container_active]: active
@@ -18,7 +18,7 @@ export const Header = memo(() => {
     };
 
     return (
-        <header className={classNames(cls.Header, {}, [])}>
+        <header className={classNames(cls.Header, headerModes, [])}>
             <div
                 className={classNames(cls.Header__container, containerModes, ['container'])}
             >
@@ -47,14 +47,7 @@ export const Header = memo(() => {
 
             </div>
 
-            <div
-                className={classNames(cls.Header__hamburger, hamburgerModes, [])}
-                onClick={() => { menuToggler() }}
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <Hamburger active={active} menuToggler={menuToggler} />
         </header>
     );
 });

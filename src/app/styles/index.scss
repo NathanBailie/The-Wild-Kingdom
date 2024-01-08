@@ -1,7 +1,21 @@
+/* stylelint-disable */
+
 @import './reset';
 @import '../variables/global';
 
-/* stylelint-disable */
+@font-face {
+    font-family: Montserrat_Light;
+    src: url('../../shared/assets/fonts/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: Montserrat_Regular;
+    src: url('../../shared/assets/fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Italiana;
+    src: url('../../shared/assets/fonts/Italiana-Regular.ttf');
+}
+
 .app {
     font-family: sans-serif;
 }

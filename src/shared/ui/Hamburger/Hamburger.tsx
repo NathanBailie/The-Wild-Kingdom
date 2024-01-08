@@ -18,11 +18,16 @@ export const Hamburger = memo((props: HamburgerProps) => {
     return (
         <div
             className={classNames(cls.Hamburger, hamburgerModes, [className])}
-            onClick={() => { menuToggler() }}
         >
-            <span></span>
-            <span></span>
-            <span></span>
+            <div
+                className={classNames(cls.Hamburger__container, {}, [className])}
+                onClick={() => { menuToggler() }}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </div>
     );
 });

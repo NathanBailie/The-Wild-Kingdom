@@ -1,9 +1,13 @@
+import { BetterWorld } from 'entities/BetterWorld';
 import { Header } from 'entities/Header';
 
 const App = () => {
     return (
         <div className="app">
-            <Header />
+            <div className="mainBgWrapper">
+                <Header />
+                <BetterWorld />
+            </div>
         </div>
     )
 }

@@ -1,26 +1,34 @@
 .Hamburger {
-    width: 30px;
-    height: 20px;
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     top: 4vh;
     right: 4vw;
-    gap: 5px;
-    cursor: pointer;
-    position: absolute;
-    box-shadow: none;
-
-    span {
+    width: 30px;
+    height: 20px;
+    z-index: 1000;
+    
+    &__container {
         width: 100%;
-        height: 3px;
-        background: var(--color-grey-khaki);
-        transition: all 0.5s ease;
-    }
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        position: absolute;
+        box-shadow: none;
         
+        span {
+            width: 100%;
+            height: 3px;
+            background: var(--color-grey-khaki);
+            transition: all 0.5s ease;
+        }
+    }
+    
     &_active {
-
+    
         span {
             transform-origin: center;
 
@@ -42,6 +50,7 @@
 @media(width<= 900px) {
 
     .Hamburger {
-        display: flex;
+        display: block;
+        position: fixed;
     }
 }

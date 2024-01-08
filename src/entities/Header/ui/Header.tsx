@@ -1,8 +1,8 @@
 import { type Mods, classNames } from 'shared/lib/classNames/classNames';
 import { memo, useState } from 'react';
 import logo from 'shared/assets/icons/logo.svg';
-import cls from './Header.module.scss';
 import { Hamburger } from 'shared/ui/Hamburger/Hamburger';
+import cls from './Header.module.scss';
 
 export const Header = memo(() => {
     const [active, setActive] = useState(false);

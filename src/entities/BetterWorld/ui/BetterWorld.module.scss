@@ -1,0 +1,117 @@
+.BetterWorld {
+    padding: 350px 0;
+    position: relative;
+    user-select: none;
+    
+    &__container {
+        position: relative;
+    }
+    
+    h1 {
+        max-width: 645px;
+        color: var(--color-grey-khaki);
+        font: var(--font-100-100) Italiana, sans-serif;
+        z-index: 2;
+        position: relative;
+    }
+    
+    button {
+        padding: 10px 30px;
+        color: var(--color-grey-khaki);
+        font: var(--font-16-25) 'Montserrat_Light', sans-serif;
+        text-align: center;
+        border-radius: 30px;
+        border: 1px solid var(--color-grey-khaki);
+        margin-top: 35px;
+        z-index: 2;
+        position: relative;
+    }
+    
+    &__mainImg {
+        max-width: 770px;
+        max-height: 770px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    
+    &__images {
+        display: flex;
+        gap: 35px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        justify-content: center;
+    }
+    
+    &__image {
+        width: 100px;
+        height: 100px;
+        border: 1px solid var(--color-grey-khaki);
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        
+        &:first-child {
+
+            img {
+                position: absolute;
+                top: -24px;
+                left: -53px;
+            }
+        }
+        
+        &:nth-child(2) {
+
+            img {
+                position: absolute;
+                top: -56px;
+                left: -16px;
+            }
+        }
+        
+        &:last-child {
+
+            img {
+                position: absolute;
+                top: -19px;
+                left: -52px;
+            }
+        }
+    }
+}
+@media(width<= 1550px) {
+
+    .BetterWorld {
+
+        &__images {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+    }
+}
+@media(width<= 1050px) {
+
+    .BetterWorld {
+
+        &__images {
+            display: none;
+        }
+    }
+}
+@media(width<= 500px) {
+
+    .BetterWorld {
+        padding: 250px 0;
+
+        h1 {
+            font: var(--font-48-56) Italiana, sans-serif;
+        }
+    }
+}

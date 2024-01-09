@@ -1,3 +1,4 @@
+import { About } from 'entities/About';
 import { BetterWorld } from 'entities/BetterWorld';
 import { Header } from 'entities/Header';
 
@@ -8,6 +9,7 @@ const App = () => {
                 <Header />
                 <BetterWorld />
             </div>
+            <About />
         </div>
     )
 }

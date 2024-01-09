@@ -16,13 +16,16 @@
     src: url('../../shared/assets/fonts/Italiana-Regular.ttf');
 }
 
-.app {
-    font-family: sans-serif;
-    background: url('../../shared/assets/img/main-bg.jpg') center center/cover no-repeat;
+body {
+    background: #EFE9DD;
 }
 
-body {
-    background: #2E2E2E;
+.app {
+    font-family: sans-serif;
+}
+
+.mainBgWrapper {
+    background: url('../../shared/assets/img/main-bg.jpg') center center/cover no-repeat;
 }
 
 .container {

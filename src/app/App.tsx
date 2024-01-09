@@ -1,6 +1,7 @@
 import { About } from 'entities/About';
 import { BetterWorld } from 'entities/BetterWorld';
 import { Header } from 'entities/Header';
+import { Products } from 'entities/Products';
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
                 <BetterWorld />
             </div>
             <About />
+            <Products />
         </div>
     )
 }

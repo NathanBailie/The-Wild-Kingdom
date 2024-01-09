@@ -19,18 +19,18 @@ export const Products = memo(() => {
 
         return (
             <div className={cls.Products__item} key={id}>
-                <div className={cls.Products__itemImg} key={id}>
+                <div className={cls.Products__itemImg}>
                     <img src={img} alt={alt} />
                     <div className={cls.Products__overlay}></div>
                     <button className={classNames(cls.Products__cartBtn, {}, ['button'])}>Add to cart</button>
                 </div>
 
-                <div className={cls.Products__itemInfo} key={id}>
+                <div className={cls.Products__itemInfo}>
                     <span>{name}</span>
                     <span>{price}</span>
                 </div>
 
-                <div className={cls.Products__itemStars} key={id}>
+                <div className={cls.Products__itemStars}>
                     {fullStarContent}
                     {emptyStarContent}
                 </div>

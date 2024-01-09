@@ -7,7 +7,11 @@
         font: var(--font-16-25) 'Montserrat_Regular', sans-serif;
         margin-left: auto;
         margin-right: auto;
-
+        
+        &:first-child {
+            text-transform: capitalize;
+        }
+        
         &:nth-child(3) {
             margin: 20px auto 0;
         }
@@ -18,6 +22,7 @@
         text-align: center;
         font: var(--font-48-56) Italiana, sans-serif;
         margin-top: 20px;
+        text-transform: capitalize;
     }
     
     img {

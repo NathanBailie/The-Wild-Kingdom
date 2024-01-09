@@ -31,7 +31,7 @@ export const About = memo(() => {
                             <h2>
                                 Treating pet like Royalty
                             </h2>
-                            <p>
+                            <p className={cls.About__quote}>
                                 “They’re not just pets, they’re family”
                             </p>
                             <p>

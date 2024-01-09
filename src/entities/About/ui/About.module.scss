@@ -36,14 +36,23 @@
         h2 {
             color: var(--color-dark-ochre);
             font: var(--font-48-56) Italiana, sans-serif;
+            margin-top: 20px;
+            text-transform: capitalize;
         }
         
         p {
-            margin-bottom: 20px;
             font: var(--font-16-25) 'Montserrat_Regular', sans-serif;
 
             &:not(:first-child) {
                 margin-top: 20px;
+            }
+            
+            &:first-child {
+                text-transform: capitalize;
+            }
+            
+            &.About__quote {
+                font-style: italic;
             }
         }
         
@@ -52,6 +61,7 @@
             border-radius: 30px;
             border: none;
             background: var(--bg-light-brown);
+            margin-top: 20px;
             
             &:hover {
                 filter: none;

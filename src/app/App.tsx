@@ -1,6 +1,7 @@
 import { About } from 'entities/About';
 import { Advantages } from 'entities/Advantages';
 import { BetterWorld } from 'entities/BetterWorld';
+import { Contacts } from 'entities/Contacts';
 import { Header } from 'entities/Header';
 import { Products } from 'entities/Products';
 import { Services } from 'entities/Services';
@@ -16,6 +17,7 @@ const App = () => {
             <Products />
             <Services />
             <Advantages />
+            <Contacts />
         </div>
     )
 };

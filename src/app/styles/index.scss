@@ -37,10 +37,11 @@ body {
 .button {
     background: none;
     cursor: pointer;
+    border: none;
     
     &:hover {
         transform: scale(1.03);
-        filter: saturate(200%);
+        filter: saturate(110%);
     }
     
     &:active {

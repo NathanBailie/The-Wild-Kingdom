@@ -2,7 +2,18 @@ import { type Mods, classNames } from 'shared/lib/classNames/classNames';
 import { memo, useState } from 'react';
 import logo from 'shared/assets/icons/logo.svg';
 import { Hamburger } from 'shared/ui/Hamburger/Hamburger';
+import { linksData } from '../lib/linksData';
 import cls from './Header.module.scss';
+
+export const siteMainLinks = linksData.map((item, id) => {
+    const { href, name } = item;
+
+    return (
+        <li key={id}>
+            <a href={href}>{name}</a>
+        </li>
+    )
+});
 
 export const Header = memo(() => {
     const [active, setActive] = useState(false);
@@ -24,18 +35,7 @@ export const Header = memo(() => {
             >
                 <nav className={cls.Header__menu}>
                     <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Products</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
+                        {siteMainLinks}
                     </ul>
                 </nav>
                 <img src={logo} alt="logo" className={cls.Header__logo} />

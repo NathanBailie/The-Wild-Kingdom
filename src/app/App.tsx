@@ -2,6 +2,7 @@ import { About } from 'entities/About';
 import { Advantages } from 'entities/Advantages';
 import { BetterWorld } from 'entities/BetterWorld';
 import { Contacts } from 'entities/Contacts';
+import { Footer } from 'entities/Footer';
 import { Header } from 'entities/Header';
 import { Products } from 'entities/Products';
 import { Quote } from 'entities/Quote';
@@ -20,6 +21,7 @@ const App = () => {
             <Advantages />
             <Contacts />
             <Quote />
+            <Footer />
         </div>
     )
 };

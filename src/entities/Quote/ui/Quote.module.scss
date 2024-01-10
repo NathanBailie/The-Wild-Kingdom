@@ -1,0 +1,98 @@
+.Quote {
+    padding: 110px 0;
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 140px;
+        height: 140px;
+        background: var(--bg-light-brown);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 70px;
+            height: 65px;
+        }
+    }
+
+    &__text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            font-size: 50px;
+            line-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-dark-ochre);
+        }
+        
+        p {
+            max-width: 1180px;
+            font: var(--font-30-50) 'Montserrat_Regular', sans-serif;
+            text-align: center;
+            position: relative;
+            margin-top: 40px;
+        }
+    }
+
+    &__openMark,
+    &__closeMark {
+        width: 40px;
+        height: 32px;
+    }
+
+    &__openMark {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    
+    &__closeMark {
+        margin-left: 15px;
+        margin-bottom: -15px;
+    }
+    
+    h2 {
+        color: var(--color-dark-ochre);
+        text-align: center;
+        font: var(--font-48-56) Italiana, sans-serif;
+        text-transform: capitalize;
+        margin-top: 50px;
+    }
+}
+@media(width<= 600px) {
+
+    .Quote {
+
+        &__text {
+
+            a {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            p {
+                font: var(--font-24-32) 'Montserrat_Regular', sans-serif;
+            }
+        }
+        
+        &__openMark,
+        &__closeMark {
+            width: 28px;
+            height: 20px;
+        }
+    }
+}

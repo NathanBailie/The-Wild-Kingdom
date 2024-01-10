@@ -4,6 +4,7 @@ import { BetterWorld } from 'entities/BetterWorld';
 import { Contacts } from 'entities/Contacts';
 import { Header } from 'entities/Header';
 import { Products } from 'entities/Products';
+import { Quote } from 'entities/Quote';
 import { Services } from 'entities/Services';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
             <Services />
             <Advantages />
             <Contacts />
+            <Quote />
         </div>
     )
 };

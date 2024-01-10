@@ -1,0 +1,107 @@
+.Advantages {
+    padding: 150px 0;
+    background: url('../../../shared/assets/img/advantages-bg.jpg') center center/cover no-repeat;
+    
+    &__items {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        
+        img {
+            user-select: none;
+        }
+        
+        &:first-child {
+            max-width: 590px;
+
+            img {
+                width: 100%;
+                max-height: 590px;
+            }
+        }
+        
+        &:nth-child(2) {
+            max-width: 785px;
+
+            img {
+                width: 100%;
+                max-height: 655px;
+            }
+        }
+        
+        &:nth-child(3) {
+            max-width: 785px;
+
+            img {
+                width: 100%;
+                max-height: 655px;
+            }
+        }
+        
+        &:last-child {
+            max-width: 590px;
+
+            img {
+                width: 100%;
+                max-height: 590px;
+            }
+        }
+    }
+    
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        
+        p {
+            color: var(--color-dark-ochre);
+            font: var(--font-32-40) Italiana, sans-serif;
+        }
+        
+        a {
+            border: none;
+            text-decoration: none;
+            font-size: 35px;
+            line-height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-dark-ochre);
+        }
+    }
+}
+@media(width<= 600px) {
+
+    .Advantages {
+
+        &__text {
+
+            p {
+                font: var(--font-30-50) Italiana, sans-serif;
+            }
+        }
+    }
+}
+@media(width<= 600px) {
+
+    .Advantages {
+
+        &__text {
+
+            p {
+                font: var(--font-24-32) Italiana, sans-serif;
+            }
+        }
+    }
+}
